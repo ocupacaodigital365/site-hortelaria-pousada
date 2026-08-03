@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pousada Boutique em Ilhabela | Refúgio das Ondas</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Pousada boutique em Ilhabela com conforto premium, ecoturismo e atendimento exclusivo na Praia do Canto. Reserve direto no WhatsApp.">
+  <meta name="keywords" content="pousada boutique em Ilhabela, pousada em Ilhabela, ecoturismo em Ilhabela, hospedagem para casais Ilhabela, pousada com natureza litoral norte SP">
+  <meta name="author" content="Pousada Refúgio das Ondas">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://site-hortelaria.fun/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Pousada Boutique em Ilhabela | Refúgio das Ondas">
+  <meta property="og:description" content="Pousada boutique em Ilhabela com conforto premium, ecoturismo e atendimento exclusivo na Praia do Canto. Reserve direto no WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://site-hortelaria.fun/">
+  <meta property="og:image" content="https://site-hortelaria.fun/assets/img/hero-bg.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pousada Refúgio das Ondas">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pousada Boutique em Ilhabela | Refúgio das Ondas">
+  <meta name="twitter:description" content="Pousada boutique em Ilhabela com conforto premium, ecoturismo e atendimento exclusivo na Praia do Canto. Reserve direto no WhatsApp.">
+  <meta name="twitter:image" content="https://site-hortelaria.fun/assets/img/hero-bg.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#29654B',
+              dark: '#1d4835',
+              light: '#357d5e',
+              50: '#f0f7f3',
+              100: '#dceee4',
+            },
+            secondary: {
+              DEFAULT: '#1E758F',
+              dark: '#155467',
+              light: '#2893b3',
+              50: '#edf7fa',
+            },
+            bgLight: '#FAFAFA',
+            textDark: '#2A333E',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow': '0 10px 30px -10px rgba(41, 101, 75, 0.3)',
+            'card-hover': '0 20px 40px -15px rgba(42, 51, 62, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Alpine.js CDN for mobile menu and FAQ accordion -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    body {
+      background-color: #FAFAFA;
+      color: #2A333E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .animate-pulse-ring {
+      animation: pulse-ring 2.5s infinite ease-in-out;
+    }
+  </style>
+  <!-- JSON-LD Schemas -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://site-hortelaria.fun/#organization",
+      "name": "Pousada Refúgio das Ondas",
+      "url": "https://site-hortelaria.fun/",
+      "logo": "https://site-hortelaria.fun/assets/img/logo.png",
+      "sameAs": [
+        "https://instagram.com/pousadarefugiodasondas",
+        "https://facebook.com/pousadarefugiodasondas"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://site-hortelaria.fun/#localbusiness",
+      "name": "Pousada Refúgio das Ondas",
+      "image": "https://site-hortelaria.fun/assets/img/hero-bg.png",
+      "url": "https://site-hortelaria.fun/",
+      "telephone": "+5512999999999",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida das Praias, 1234, Praia do Canto",
+        "addressLocality": "Ilhabela",
+        "addressRegion": "SP",
+        "postalCode": "11630-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.81643445,
+        "longitude": -45.45265415
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117926.24163914162!2d-45.45265415!3d-23.81643445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd5fa609104033%3A0xc3c57700e5df636!2sIlhabela%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1715000000000!5m2!1spt-BR!2sbr",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Praia do Canto, Litoral Norte, Ilhabela"
+      },
+      "parentOrganization": {
+        "@id": "https://site-hortelaria.fun/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://site-hortelaria.fun/#website",
+      "url": "https://site-hortelaria.fun/",
+      "name": "Pousada Boutique em Ilhabela | Refúgio das Ondas",
+      "publisher": {
+        "@id": "https://site-hortelaria.fun/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://site-hortelaria.fun/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual é o valor das diárias na pousada boutique em Ilhabela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Os valores variam conforme a temporada, feriados e o tipo de suíte escolhida. Para receber um orçamento imediato e preciso, basta entrar em contato com nossa equipe pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A pousada está localizada perto de quais praias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estamos na famosa Praia do Canto, com acesso facilitado para o centro histórico e a poucos minutos das rotas que levam às principais praias e cachoeiras do Litoral Norte."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O café da manhã artesanal já está incluso no valor da diária?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Todas as nossas reservas incluem um café da manhã completo, preparado diariamente com muito cuidado e ingredientes locais."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as formas de pagamento aceitas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceitamos pagamentos via PIX, cartões de crédito e débito. Consulte nossas condições de parcelamento diretamente no atendimento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês oferecem roteiros guiados de ecoturismo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Nós auxiliamos na organização e indicação de experiências exclusivas, conectando você aos melhores guias parceiros para explorar a Mata Atlântica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A Pousada Refúgio das Ondas é recomendada para viagens românticas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Com certeza. Nosso foco é proporcionar um ambiente intimista, privativo e acolhedor, sendo o cenário ideal para casais e luas de mel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês possuem estacionamento fechado e seguro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, disponibilizamos estacionamento próprio, seguro e gratuito para garantir a total tranquilidade dos nossos hóspedes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como faço para verificar a disponibilidade de datas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A forma mais rápida e prática é clicar no botão do WhatsApp aqui no site. Nossa recepção está pronta para atender você e confirmar as datas desejadas."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://site-hortelaria.fun/#service-hospedagem",
+      "name": "Hospedagem Exclusiva",
+      "description": "Quartos extremamente confortáveis e integrados à natureza para o seu relaxamento e desconexão.",
+      "provider": {
+        "@id": "https://site-hortelaria.fun/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Ilhabela"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://site-hortelaria.fun/#service-ecoturismo",
+      "name": "Experiências de Ecoturismo",
+      "description": "Acesso privilegiado a trilhas, praias e atividades em meio à Mata Atlântica.",
+      "provider": {
+        "@id": "https://site-hortelaria.fun/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Ilhabela"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://site-hortelaria.fun/#service-cafe",
+      "name": "Café da Manhã Artesanal",
+      "description": "Um verdadeiro espetáculo servido todas as manhãs com produtos frescos e locais.",
+      "provider": {
+        "@id": "https://site-hortelaria.fun/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Ilhabela"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://site-hortelaria.fun/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://site-hortelaria.fun/"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white" x-data="{ mobileMenuOpen: false }">
+
+  <!-- HEADER FIXO (STICKY NAV) -->
+  <header class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-gray-100/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO -->
+      <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+        <img src="assets/img/logo.png" alt="Logo Pousada Refúgio das Ondas" width="160" height="50" class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-textDark">
+        <a href="#servicos" class="hover:text-primary transition-colors py-2">Acomodações</a>
+        <a href="#sobre" class="hover:text-primary transition-colors py-2">Quem Somos</a>
+        <a href="#beneficios" class="hover:text-primary transition-colors py-2">Diferenciais</a>
+        <a href="#como-funciona" class="hover:text-primary transition-colors py-2">Como Reservar</a>
+        <a href="#depoimentos" class="hover:text-primary transition-colors py-2">Depoimentos</a>
+        <a href="#area-atuacao" class="hover:text-primary transition-colors py-2">Localização</a>
+        <a href="#faq" class="hover:text-primary transition-colors py-2">FAQ</a>
+      </nav>
+
+      <!-- CTA HEADER BUTTON (DESKTOP) -->
+      <div class="hidden lg:flex items-center">
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20de%20reserva." target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-glow transition-all duration-300 text-sm transform hover:-translate-y-0.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          Reservar no WhatsApp
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER BUTTON -->
+      <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="lg:hidden p-2 rounded-lg text-textDark hover:bg-gray-100 focus:outline-none" aria-label="Abrir Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="!mobileMenuOpen">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-show="mobileMenuOpen" style="display: none;">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- MOBILE MENU DROPDOWN -->
+    <div x-show="mobileMenuOpen" 
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0 -translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 -translate-y-4"
+         class="lg:hidden glass-nav border-b border-gray-200 px-4 pt-2 pb-6 space-y-3"
+         style="display: none;">
+      <a href="#servicos" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Acomodações</a>
+      <a href="#sobre" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Quem Somos</a>
+      <a href="#beneficios" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Diferenciais</a>
+      <a href="#como-funciona" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Como Reservar</a>
+      <a href="#depoimentos" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Depoimentos</a>
+      <a href="#area-atuacao" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Localização</a>
+      <a href="#faq" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">FAQ</a>
+      <a href="#contato" @click="mobileMenuOpen = false" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-primary/10 hover:text-primary">Contato</a>
+      
+      <div class="pt-4 border-t border-gray-100">
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20de%20reserva." target="_blank" rel="noopener noreferrer" 
+           class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-5 py-3 rounded-full shadow-md text-sm">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          Consultar Disponibilidade no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="pt-20">
+
+    <!-- 1. HERO SECTION (#hero) -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 lg:py-28">
+      <!-- Background Image with Gradient Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="assets/img/hero-bg.png" alt="Vista da Pousada Refúgio das Ondas em Ilhabela" width="1920" height="1080" loading="eager" class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-1000">
+        <div class="absolute inset-0 bg-gradient-to-r from-textDark/90 via-textDark/75 to-textDark/50 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-textDark/80 via-transparent to-textDark/40"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 text-white space-y-6">
+          
+          <!-- Badge Pill -->
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium tracking-wide text-white">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Praia do Canto • Ilhabela, SP</span>
+          </div>
+
+          <!-- Unique H1 -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-tight text-white drop-shadow-sm">
+            Pousada Boutique em Ilhabela: Seu Refúgio Exclusivo
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-lg sm:text-xl text-gray-200 max-w-3xl leading-relaxed font-normal">
+            Fuja da rotina e conecte-se com a natureza no Litoral Norte de São Paulo. Oferecemos conforto premium, atendimento intimista e experiências inesquecíveis para quem busca relaxamento e ecoturismo, de frente para o mar.
+          </p>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20de%20reserva." target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-light text-white text-base font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <span>Consultar Disponibilidade no WhatsApp</span>
+            </a>
+
+            <a href="#servicos" 
+               class="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white border border-white/30 text-base font-semibold px-7 py-4 rounded-full backdrop-blur-md transition-all duration-300">
+              Conhecer nossas acomodações
+            </a>
+          </div>
+
+          <!-- Support Text -->
+          <div class="pt-2 flex items-center justify-center lg:justify-start gap-2 text-xs sm:text-sm text-gray-300">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            <span>Atendimento humanizado. Respondemos rapidamente.</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BARRA DE CREDIBILIDADE (#credibilidade) -->
+    <section id="credibilidade" class="bg-white border-y border-gray-100 py-8 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+          
+          <!-- Item 1 -->
+          <div class="flex items-center gap-4 p-3 rounded-xl hover:bg-bgLight transition-colors">
+            <div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-500 shrink-0 text-xl font-bold">
+              ⭐
+            </div>
+            <div>
+              <p class="text-sm font-bold text-textDark">Avaliação 4.8 estrelas no Google</p>
+              <p class="text-xs text-gray-500">(+1.200 avaliações)</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex items-center gap-4 p-3 rounded-xl hover:bg-bgLight transition-colors">
+            <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-primary shrink-0 text-xl font-bold">
+              🍃
+            </div>
+            <div>
+              <p class="text-sm font-bold text-textDark">Integração total</p>
+              <p class="text-xs text-gray-500">com a Mata Atlântica e o Mar</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex items-center gap-4 p-3 rounded-xl hover:bg-bgLight transition-colors">
+            <div class="w-12 h-12 rounded-full bg-sky-50 flex items-center justify-center text-secondary shrink-0 text-xl font-bold">
+              🕒
+            </div>
+            <div>
+              <p class="text-sm font-bold text-textDark">Recepção e suporte local</p>
+              <p class="text-xs text-gray-500">24 horas por dia</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex items-center gap-4 p-3 rounded-xl hover:bg-bgLight transition-colors">
+            <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-primary shrink-0 text-xl font-bold">
+              🔒
+            </div>
+            <div>
+              <p class="text-sm font-bold text-textDark">Ambiente seguro</p>
+              <p class="text-xs text-gray-500">privativo e sustentável</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO "QUEM SOMOS" (#sobre) -->
+    <section id="sobre" class="py-20 lg:py-28 bg-bgLight relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image Column -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group">
+              <img src="assets/img/sobre.png" alt="Arquitetura da Pousada Refúgio das Ondas em Ilhabela" width="800" height="600" loading="lazy" class="w-full h-[420px] sm:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-textDark/40 via-transparent to-transparent opacity-60"></div>
+            </div>
+            
+            <!-- Floating Decorative Card -->
+            <div class="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-4 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 max-w-xs">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs font-semibold uppercase text-primary tracking-wider">Praia do Canto</p>
+                <p class="text-sm font-bold text-textDark">Exclusividade e Natureza</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+              Sobre Nossa Pousada
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark leading-tight">
+              O que torna nossa pousada em Ilhabela um lugar único
+            </h2>
+
+            <div class="space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
+              <p>
+                A Pousada Refúgio das Ondas nasceu do desejo de unir o conforto de uma hospedagem exclusiva com a preservação ambiental. Localizada estrategicamente na Praia do Canto, nosso espaço foi inteiramente planejado para proporcionar o seu descanso absoluto.
+              </p>
+              <p>
+                Com foco em bem-estar e sustentabilidade, criamos um ambiente seguro, acolhedor e longe do agito da cidade. É o destino ideal para quem busca se desconectar do estresse diário e recarregar as energias em meio à natureza litorânea.
+              </p>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20equipe%20da%20pousada." target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center gap-3 bg-secondary hover:bg-secondary-dark text-white font-semibold px-7 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
+                <span>Fale com nossa equipe</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO DE SERVIÇOS (#servicos) -->
+    <section id="servicos" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+            Acomodações & Experiências
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark">
+            Experiências e Acomodações na Nossa Pousada
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-bgLight rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+            <div class="relative h-64 overflow-hidden">
+              <img src="assets/img/hospedagem-exclusiva.png" alt="Quarto aconchegante com vista para a natureza em Ilhabela" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-textDark/60 via-transparent to-transparent opacity-40"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-primary text-xs font-bold px-3 py-1 rounded-full">Exclusividade</span>
+            </div>
+            <div class="p-8 flex-1 flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <h3 class="text-2xl font-serif font-bold text-textDark group-hover:text-primary transition-colors">
+                  Hospedagem Exclusiva
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Quartos extremamente confortáveis e integrados à natureza para o seu relaxamento e desconexão. Privacidade e bem-estar pensados em cada detalhe.
+                </p>
+              </div>
+              <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20ver%20fotos%20das%20su%C3%ADtes%20dispon%C3%ADveis." target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center justify-between text-primary font-bold text-sm hover:text-primary-dark group-hover:translate-x-1 transition-all">
+                <span>Ver fotos das suítes</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-bgLight rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-2 transition-all duration-300 flex flex-col group">
+            <div class="relative h-64 overflow-hidden">
+              <img src="assets/img/experiencias-ecoturismo.png" alt="Trilha em meio a Mata Atlântica em Ilhabela" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-textDark/60 via-transparent to-transparent opacity-40"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-secondary text-xs font-bold px-3 py-1 rounded-full">Ecoturismo</span>
+            </div>
+            <div class="p-8 flex-1 flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <h3 class="text-2xl font-serif font-bold text-textDark group-hover:text-secondary transition-colors">
+                  Experiências de Ecoturismo em Ilhabela
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Acesso privilegiado a trilhas exclusivas, praias paradisíacas e atividades imersivas em meio à riqueza da Mata Atlântica.
+                </p>
+              </div>
+              <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20roteiros%20de%20ecoturismo." target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center justify-between text-secondary font-bold text-sm hover:text-secondary-dark group-hover:translate-x-1 transition-all">
+                <span>Conhecer roteiros</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-bgLight rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-2 transition-all duration-300 flex flex-col group md:col-span-2 lg:col-span-1">
+            <div class="relative h-64 overflow-hidden">
+              <img src="assets/img/cafe-da-manha.png" alt="Café da manhã artesanal servido na Pousada Refúgio das Ondas" width="600" height="400" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-textDark/60 via-transparent to-transparent opacity-40"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-amber-600 text-xs font-bold px-3 py-1 rounded-full">Artesanal</span>
+            </div>
+            <div class="p-8 flex-1 flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <h3 class="text-2xl font-serif font-bold text-textDark group-hover:text-primary transition-colors">
+                  Café da Manhã Artesanal
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Um verdadeiro espetáculo servido todas as manhãs. Saboreie produtos frescos, selecionados e de produtores locais, com vista para a natureza.
+                </p>
+              </div>
+              <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20minha%20hospedagem%20com%20caf%C3%A9%20da%20manh%C3%A3." target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center justify-between text-primary font-bold text-sm hover:text-primary-dark group-hover:translate-x-1 transition-all">
+                <span>Reservar agora</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Closing Banner Card -->
+        <div class="mt-16 bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 sm:p-12 text-white shadow-xl text-center flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="space-y-2 text-center md:text-left">
+            <h3 class="text-2xl sm:text-3xl font-serif font-bold">
+              Pronto para viver momentos inesquecíveis no Litoral Norte de SP?
+            </h3>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Quero%20viver%20momentos%20inesquec%C3%ADveis%20na%20pousada." target="_blank" rel="noopener noreferrer" 
+             class="shrink-0 bg-white hover:bg-gray-50 text-primary font-bold px-8 py-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-3">
+            <svg class="w-5 h-5 fill-current text-[#25D366]" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE BENEFÍCIOS / POR QUE NOS ESCOLHER (#beneficios) -->
+    <section id="beneficios" class="py-20 lg:py-28 bg-bgLight">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+            Diferenciais Exclusivos
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark">
+            Por que escolher nossa hospedagem para casais em Ilhabela?
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- Benefit 1 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-6">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-primary flex items-center justify-center shrink-0 text-2xl">
+              🌊
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-textDark">Conexão Mar e Natureza</h3>
+              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                Desperte com o som dos pássaros e a brisa do oceano em um ambiente rodeado de verde nativo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-6">
+            <div class="w-14 h-14 rounded-2xl bg-sky-50 text-secondary flex items-center justify-center shrink-0 text-2xl">
+              ⭐
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-textDark">Atendimento Altamente Exclusivo</h3>
+              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                Nossa equipe está pronta para tornar cada momento da sua estadia especial, discreto e sob medida.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-6">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-primary flex items-center justify-center shrink-0 text-2xl">
+              🍃
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-textDark">Foco em Sustentabilidade</h3>
+              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                Adotamos práticas ecológicas sólidas para garantir a preservação do paraíso onde estamos inseridos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-6">
+            <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0 text-2xl">
+              🔒
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-bold text-textDark">Privacidade e Segurança</h3>
+              <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                Um espaço restrito, seguro e silencioso, perfeito para viagens românticas e para quem quer fugir da rotina.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. COMO FUNCIONA / PROCESSO (#como-funciona) -->
+    <section id="como-funciona" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+            Passo a Passo Simples
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark">
+            Como reservar sua estadia conosco
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 relative">
+          
+          <!-- Connecting Line (Desktop) -->
+          <div class="hidden md:block absolute top-1/2 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 -translate-y-12 z-0"></div>
+
+          <!-- Step 1 -->
+          <div class="bg-bgLight p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center space-y-4 hover:-translate-y-1 transition-transform">
+            <div class="w-16 h-16 rounded-2xl bg-primary text-white font-serif text-2xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-primary/20">
+              1
+            </div>
+            <h3 class="text-xl font-bold text-textDark">Chame no WhatsApp</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Clique em qualquer botão desta página para falar diretamente com nossa equipe de reservas, sem intermediários.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-bgLight p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center space-y-4 hover:-translate-y-1 transition-transform">
+            <div class="w-16 h-16 rounded-2xl bg-secondary text-white font-serif text-2xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-secondary/20">
+              2
+            </div>
+            <h3 class="text-xl font-bold text-textDark">Escolha suas datas e suíte</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Informaremos as acomodações disponíveis e ajudaremos você a escolher a opção ideal para a sua viagem.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-bgLight p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center space-y-4 hover:-translate-y-1 transition-transform">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-700 text-white font-serif text-2xl font-bold flex items-center justify-center mx-auto shadow-lg shadow-emerald-700/20">
+              3
+            </div>
+            <h3 class="text-xl font-bold text-textDark">Confirme e relaxe</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Após uma confirmação simples e segura, sua reserva está garantida. É só arrumar as malas e se preparar para o descanso.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. PROVA SOCIAL / DEPOIMENTOS (#depoimentos) -->
+    <section id="depoimentos" class="py-20 lg:py-28 bg-bgLight">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+            Avaliações dos Hóspedes
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark">
+            O que dizem sobre nossa pousada com natureza no litoral norte de SP
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-lg">
+                ★★★★★
+              </div>
+              <p class="text-gray-700 italic leading-relaxed text-sm sm:text-base">
+                "Lugar incrível! A integração com a natureza é perfeita, o quarto é extremamente confortável e o café da manhã é um espetáculo. Voltaremos com certeza."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="font-bold text-textDark text-sm">– Mariana e João</span>
+              <span class="text-xs text-gray-400 font-medium">Hóspedes Verificados</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-lg">
+                ★★★★★
+              </div>
+              <p class="text-gray-700 italic leading-relaxed text-sm sm:text-base">
+                "A melhor experiência de hospedagem para casais em Ilhabela. O atendimento faz você se sentir em casa, e a localização na Praia do Canto é simplesmente excelente."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="font-bold text-textDark text-sm">– Hóspede via Google</span>
+              <span class="text-xs text-emerald-600 bg-emerald-50 font-semibold px-2.5 py-0.5 rounded-full">Google Reviews</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-lg">
+                ★★★★★
+              </div>
+              <p class="text-gray-700 italic leading-relaxed text-sm sm:text-base">
+                "Buscávamos um lugar tranquilo para fugir da cidade e encontramos um verdadeiro refúgio. O compromisso deles com o ecoturismo é inspirador."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+              <span class="font-bold text-textDark text-sm">– Hóspede via Google</span>
+              <span class="text-xs text-emerald-600 bg-emerald-50 font-semibold px-2.5 py-0.5 rounded-full">Google Reviews</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. BLOCO SEO LOCAL / ÁREA DE ATUAÇÃO (#area-atuacao) -->
+    <section id="area-atuacao" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text Info Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+              Localização Privilegiada
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark leading-tight">
+              Onde ficar em Ilhabela: Conheça nossa localização na Praia do Canto
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed text-base">
+              Estamos situados no coração da Praia do Canto, uma das regiões mais charmosas, seguras e acessíveis de Ilhabela. Nossa estrutura oferece a conveniência de estar estrategicamente localizada perto das belezas naturais e facilidades da cidade, sem abrir mão da paz e do silêncio que só um verdadeiro refúgio proporciona.
+            </p>
+
+            <div class="space-y-4 pt-2 border-t border-gray-100 text-sm sm:text-base">
+              
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                  📍
+                </div>
+                <div>
+                  <strong class="text-textDark block">Endereço:</strong>
+                  <span class="text-gray-600">Avenida das Praias, 1234, Praia do Canto - Ilhabela, SP - CEP: 11630-000</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-secondary/10 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+                  🕒
+                </div>
+                <div>
+                  <strong class="text-textDark block">Horário de Atendimento:</strong>
+                  <span class="text-gray-600">Recepção 24h | Check-in: 14:00 | Check-out: 12:00</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                  📞
+                </div>
+                <div>
+                  <strong class="text-textDark block">Telefone e WhatsApp:</strong>
+                  <a href="https://wa.me/5512999999999" target="_blank" class="text-primary hover:underline font-semibold">+55 (12) 99999-9999</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Map Column -->
+          <div class="lg:col-span-7">
+            <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-200 bg-gray-100 h-[450px]">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117926.24163914162!2d-45.45265415!3d-23.81643445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd5fa609104033%3A0xc3c57700e5df636!2sIlhabela%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1715000000000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da Pousada em Ilhabela"></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. FAQ ESTRATÉGICO (#faq) -->
+    <section id="faq" class="py-20 lg:py-28 bg-bgLight">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center space-y-4 mb-16">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10">
+            Tire suas Dúvidas
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-textDark">
+            Dúvidas Frequentes sobre sua Viagem a Ilhabela
+          </h2>
+        </div>
+
+        <!-- Alpine Accordion Component -->
+        <div class="space-y-4" x-data="{ open: 1 }">
+          
+          <!-- Item 1 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 1 ? null : 1)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>Qual é o valor das diárias na pousada boutique em Ilhabela?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 1" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Os valores variam conforme a temporada, feriados e o tipo de suíte escolhida. Para receber um orçamento imediato e preciso, basta entrar em contato com nossa equipe pelo WhatsApp.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 2 ? null : 2)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>A pousada está localizada perto de quais praias?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 2" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Estamos na famosa Praia do Canto, com acesso facilitado para o centro histórico e a poucos minutos das rotas que levam às principais praias e cachoeiras do Litoral Norte.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 3 ? null : 3)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>O café da manhã artesanal já está incluso no valor da diária?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 3" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Sim. Todas as nossas reservas incluem um café da manhã completo, preparado diariamente com muito cuidado e ingredientes locais.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 4 ? null : 4)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>Quais são as formas de pagamento aceitas?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 4 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 4" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Aceitamos pagamentos via PIX, cartões de crédito e débito. Consulte nossas condições de parcelamento diretamente no atendimento.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 5 ? null : 5)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>Vocês oferecem roteiros guiados de ecoturismo?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 5 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 5" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Sim! Nós auxiliamos na organização e indicação de experiências exclusivas, conectando você aos melhores guias parceiros para explorar a Mata Atlântica.
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 6 ? null : 6)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>A Pousada Refúgio das Ondas é recomendada para viagens românticas?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 6 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 6" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Com certeza. Nosso foco é proporcionar um ambiente intimista, privativo e acolhedor, sendo o cenário ideal para casais e luas de mel.
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 7 ? null : 7)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>Vocês possuem estacionamento fechado e seguro?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 7 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 7" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              Sim, disponibilizamos estacionamento próprio, seguro e gratuito para garantir a total tranquilidade dos nossos hóspedes.
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm transition-colors">
+            <button @click="open = (open === 8 ? null : 8)" type="button" class="w-full p-6 text-left font-bold text-textDark text-lg flex items-center justify-between gap-4 focus:outline-none">
+              <span>Como faço para verificar a disponibilidade de datas?</span>
+              <svg class="w-5 h-5 text-primary transform transition-transform duration-200 shrink-0" :class="{ 'rotate-180': open === 8 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div x-show="open === 8" x-collapse class="px-6 pb-6 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4" style="display: none;">
+              A forma mais rápida e prática é clicar no botão do WhatsApp aqui no site. Nossa recepção está pronta para atender você e confirmar as datas desejadas.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. CTA FINAL / CONTATO (#contato) -->
+    <section id="contato" class="py-20 lg:py-28 bg-gradient-to-br from-textDark via-[#1f2832] to-[#171f28] text-white relative overflow-hidden">
+      
+      <!-- Background Ambient Glow -->
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        
+        <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white/10 text-emerald-400 border border-white/10">
+          Reservas Online
+        </span>
+
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold leading-tight">
+          Garanta seu momento de descanso no Refúgio das Ondas
+        </h2>
+
+        <p class="text-gray-300 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+          Nossas suítes são limitadas para manter a exclusividade, o atendimento premium e o silêncio que você merece. Não deixe para a última hora.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20recep%C3%A7%C3%A3o%20para%20garantir%20minha%20reserva." target="_blank" rel="noopener noreferrer" 
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white text-base font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            </svg>
+            <span>Falar com a Recepção no WhatsApp</span>
+          </a>
+
+          <a href="tel:5512999999999" 
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-base font-semibold px-8 py-4 rounded-full transition-all duration-300">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span>Ligar para (12) 99999-9999</span>
+          </a>
+
+        </div>
+
+        <p class="text-xs sm:text-sm text-gray-400 pt-2">
+          Atendimento rápido, seguro e sem burocracia.
+        </p>
+
+        <!-- Address & Reception Info -->
+        <div class="pt-6 border-t border-white/10 text-xs sm:text-sm text-gray-300 flex flex-wrap items-center justify-center gap-4">
+          <span>Avenida das Praias, 1234, Praia do Canto - Ilhabela, SP</span>
+          <span class="hidden sm:inline">•</span>
+          <span>Recepção 24h</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 11. FOOTER (NO H2 TAG PER INSTRUCTIONS) -->
+  <footer class="bg-[#192027] text-gray-400 pt-16 pb-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <!-- Column 1: Logo & Tagline -->
+        <div class="space-y-4">
+          <img src="assets/img/logo.png" alt="Logo Pousada Refúgio das Ondas" width="160" height="50" class="h-12 w-auto object-contain brightness-110">
+          <p class="text-sm leading-relaxed text-gray-400">
+            Sua pousada boutique e ecoturismo na Praia do Canto em Ilhabela. Exclusividade, conforto e natureza em perfeita sintonia.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-3">
+          <p class="text-white font-bold text-sm tracking-wider uppercase">Navegação Rápida</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#servicos" class="hover:text-primary-light transition-colors">Acomodações</a></li>
+            <li><a href="#sobre" class="hover:text-primary-light transition-colors">Nossos Diferenciais</a></li>
+            <li><a href="#faq" class="hover:text-primary-light transition-colors">Dúvidas Frequentes</a></li>
+            <li><a href="#contato" class="hover:text-primary-light transition-colors">Fazer Reserva</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Hours -->
+        <div class="space-y-3">
+          <p class="text-white font-bold text-sm tracking-wider uppercase">Contato & Atendimento</p>
+          <div class="space-y-2 text-sm text-gray-400">
+            <p>(12) 99999-9999</p>
+            <p>Avenida das Praias, 1234, Ilhabela - SP</p>
+            <p class="text-xs text-emerald-400 font-medium pt-1">Recepção 24 horas por dia.</p>
+          </div>
+        </div>
+
+        <!-- Column 4: Social Media -->
+        <div class="space-y-3">
+          <p class="text-white font-bold text-sm tracking-wider uppercase">Acompanhe</p>
+          <div class="flex items-center gap-4 pt-1">
+            <a href="https://instagram.com/pousadarefugiodasondas" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary text-white flex items-center justify-center transition-colors" aria-label="Instagram">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/pousadarefugiodasondas" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary text-white flex items-center justify-center transition-colors" aria-label="Facebook">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 Pousada Refúgio das Ondas. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ocupaçãodigital365</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (CANTO INFERIOR DIREITO - FIXO) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center group">
+    <!-- Tooltip on Hover -->
+    <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-3 bg-textDark text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg whitespace-nowrap pointer-events-none">
+      Falar com a Reserva
+    </div>
+    
+    <a href="https://wa.me/5512999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas." 
+       target="_blank" rel="noopener noreferrer" 
+       class="relative w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full flex items-center justify-center shadow-2xl transition-transform duration-300 transform group-hover:scale-110 focus:outline-none"
+       aria-label="Contato via WhatsApp">
+      <!-- Pulsing Ring Background -->
+      <span class="absolute inset-0 rounded-full bg-[#25D366] animate-pulse-ring pointer-events-none"></span>
+      
+      <!-- SVG WhatsApp Icon -->
+      <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+      </svg>
+    </a>
+  </div>
+
+</body>
+</html>
